@@ -45,6 +45,15 @@ a{
 
 .create-user-container {
   text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 2% 0 10px;
+}
+
+.create-user-container form {
+  background-color: paleturquoise;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 label {
@@ -56,7 +65,27 @@ label {
   margin-top: 10px;
 }
 
-.submit-btn button {
-  border-radius: 20px;
+.main-button {
+  border-radius: 10px;
   padding: 4px;
+  background-color: red;
+  color: #fff;
+}
+
+.update-user-container{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: auto ;
+}
+.update-user-container form {
+  margin-top: 10%;
+  background-color: paleturquoise;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.save-btn{
+  margin-top: 15px;
 }
