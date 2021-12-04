@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<style>
+
+  .file-form {
+    border-top: 1px solid black ;
+    padding: 20px;
+  }
+</style>
+<body>
+  
+  <div class="topnav">
+    <a href="/">Home</a>
+    <a class="active" href="/upload">Upload File</a>
+  </div>
+  
+    <h1>Handling Upload File with Express.js and Multer </h1>
+    <div class="upload-file-container">
+      <div class="file-form">
+        <h2>Upload Single File</h2>
+        <!--Upload Single File-->
+        <form method="POST" action="/upload-profile-pic" enctype="multipart/form-data">
+          <div>
+            <label for="">Avatar:</label>
+            <input type="file" name="profile_pic">
+          </div>
+  
+          <div>
+            <button type="submit" class="main-button save-btn">
+              SAVE FILE
+            </button>
+          </div>
+        </form>
+      </div>
+
+        <div class="file-form">
+          <!--Upload multiple file-->
+        <h2>Upload Multiple File</h2>
+        <form method="POST" action="/upload-multiple-images" enctype="multipart/form-data">
+          <div>
+              <label>Select multiple images:</label>
+              <input type="file" name="multiple_images" multiple />
+          </div>
+          <div>
+              <input type="submit" name="btn_upload_multiple_images" value="Upload" class="main-button save-btn" />
+          </div>
+      </form>
+        </div>
+    </div>
+</body>
+</html>
